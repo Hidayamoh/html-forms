@@ -10,13 +10,43 @@
   <body>
     <header><h1>registration form</h1></header>
     <form action="/action_page.php">
-      <label for="fname">First name:</label><br />
-      <input type="text" id="fname" name="fname" value="" /><br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" value="" /><br />
-      <label for="email">email:</label><br />
-      <input type="text" id="email" name="email" value="" /><br /><br />
-      <input type="submit" value="Submit" />
+      <fieldset>
+        <legend>personal info:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="" /><br />
+        <label for="gender">gender:</label>
+        <select id="gender" name="gender">
+          <option value="none"></option>
+          <option value="male">male</option>
+          <option value="female">female</option></select
+        ><br />
+        <label for="email">email:</label><br />
+        <input type="text" id="email" name="email" value="" /><br />
+        <label for="pass_word">pass_word:</label><br />
+        <input type="text" id="pass_word" name="pass_word" value="" /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Address:</legend>
+        <label for="Country">Country:</label><br />
+        <input type="text" id="country" name="country" value="" /><br />
+        <label for="city">city:</label><br />
+        <input type="text" id="city" name="city" value="" /><br />
+        <label for="Street">Street:</label><br />
+        <input type="text" id="Street" name="Street" value="" /><br />
+      </fieldset>
+      <br />
+      <textarea name="comment" style="width: 350px; height: 100px">your Comment here: </textarea><br />
+      <form>
+        <input type="radio" id="notification" name="notification" value="notification" />
+        <label for="notification">you can send me emails and notifications</label><br />
+        <input type="radio" id="no-notification" name="no-notification" value="no-notification" />
+        <label for="no-notification">Do not send me emails and notifications</label><br />
+      </form>
+      <br />
+      <div class="submit"><input type="submit" value="Submit" /></div>
     </form>
   </body>
 </html>
